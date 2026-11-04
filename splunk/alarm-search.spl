@@ -1,0 +1,4 @@
+index=aws sourcetype=aws:cloudwatchlogs* "CloudWatch Alarm State Change"
+| spath
+| search "detail.state.value"=ALARM
+| table _time, detail.alarmName, detail.state.reason, region

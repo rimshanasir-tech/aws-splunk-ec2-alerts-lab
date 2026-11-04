@@ -1,0 +1,12 @@
+{
+  "source": [
+    "aws.cloudwatch",
+    "aws.guardduty",
+    "aws.ec2"
+  ],
+  "detail-type": [
+    "CloudWatch Alarm State Change",
+    "GuardDuty Finding",
+    "EC2 Instance State-change Notification"
+  ]
+}
